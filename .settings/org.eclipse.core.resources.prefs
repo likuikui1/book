@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/com/chxy/usedbook/activity/BookMarketViewPagerFragment.java=UTF-8
+encoding//src/com/chxy/usedbook/activity/HomeActivity.java=UTF-8
+encoding//src/com/chxy/usedbook/activity/LoginActivity.java=UTF-8
+encoding//src/com/chxy/usedbook/activity/PhotoAlbumActivity.java=UTF-8
+encoding//src/com/chxy/usedbook/activity/PhotoWallActivity.java=UTF-8
+encoding//src/com/chxy/usedbook/activity/Pic.java=UTF-8
+encoding//src/com/chxy/usedbook/adapter/MainGVAdapter.java=UTF-8
+encoding//src/com/chxy/usedbook/utils/JsonResponseParser.java=UTF-8
+encoding//src/com/chxy/usedbook/utils/SDCardImageLoader.java=UTF-8
+encoding//src/com/chxy/usedbook/utils/ScreenUtils.java=UTF-8
+encoding//src/com/chxy/usedbook/utils/Utility.java=UTF-8
+encoding//src/com/chxy/usedbook/view/SquareRelativeLayout.java=UTF-8
+encoding//src/com/chxy/usedbook/view/XListView.java=UTF-8
+encoding//src/com/chxy/usedbook/view/XListViewFooter.java=UTF-8
+encoding//src/com/chxy/usedbook/view/XListViewHeader.java=UTF-8
+encoding//src/com/chxy/usedbook/vo/PersonInfoEntity.java=UTF-8

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:background="#43c248" 
+     android:padding="5dp"
+     >
+       <TextView
+         android:gravity="center" 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="首页"
+         android:textColor="#f1f1f1"
+         android:textSize="25sp"
+           />
+       
+       <ImageView
+       android:layout_centerVertical="true"    
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:src="@drawable/home_logo" 
+       android:layout_alignParentLeft="true"   
+           /> 
+           
+       <ImageView
+       android:id="@+id/home_search_img"
+       android:layout_centerVertical="true"  
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:src="@drawable/home_icon_sreach" 
+       android:layout_alignParentRight="true"   
+           /> 
+        
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal" 
+                android:id="@+id/ll_point_container"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:orientation="horizontal"
+                >
+        </LinearLayout>
+       </RelativeLayout>
+
+      <GridView
+          android:id="@+id/gv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="8dp"
+          android:horizontalSpacing="8dp"
+          android:numColumns="2"
+          android:paddingRight="8dp"
+          android:paddingTop="8dp"
+          android:verticalSpacing="8dp" >
+      </GridView>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f1f1f1"
+        android:padding="6dp"
+        >
+        <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新书上架"
+        android:textSize="15sp"
+        android:textColor="#333"
+        android:layout_centerVertical="true"
+            />
+        <ImageView
+        android:layout_centerVertical="true" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home_icon_more"
+        android:layout_alignParentRight="true"
+        android:id="@+id/iv_more"
+            />
+        
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更多"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_more"
+        android:textColor="#43c248"
+            />  
+    </RelativeLayout>
+    
+    <ListView
+       android:dividerHeight="15dp" 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" 
+       android:divider="@null"
+       android:id="@+id/lv"
+        />
+
+</LinearLayout>

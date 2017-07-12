@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<LinearLayout 
+	    android:id="@+id/ll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:orientation="horizontal"
+	    android:padding="5dp">
+	    
+	    
+	    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:paddingLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView 
+                android:id="@+id/book_list_num"
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:textSize="22dp"
+	            android:text="1."
+	            android:textStyle="italic"
+	            android:typeface="monospace"
+	            android:textColor="#ED6709"
+	            />
+	        <TextView 
+	            android:paddingTop="3dp"
+	            android:id="@+id/goodbook_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:text="发货收到货哈哈哈哈哈会速度发货"
+	            android:textSize="20dp"
+	            android:singleLine="true"
+	            android:textStyle="bold"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+	        
+	        <LinearLayout 
+	            android:layout_height="wrap_content"
+				android:gravity="center"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+	            <TextView 
+	                android:id="@+id/goodbook_see_num"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:textColor="#989898"
+	                android:text="233"/>
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:textColor="#989898"
+	                android:text="浏览"/>
+	   
+	        </LinearLayout>
+	        <View 
+	            android:layout_gravity="center_vertical"
+	            android:layout_height="20dp"
+	            android:layout_width="1px"
+	            android:background="#989898"/>
+	         <LinearLayout 
+	            android:layout_height="wrap_content"
+				android:gravity="center"
+	           android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+	            <TextView 
+	                android:id="@+id/goodbook_trade_num"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:textColor="#989898"
+	                android:text="233"/>
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:textColor="#989898"
+	                android:text="交易"/>
+	   
+	        </LinearLayout>
+	        <View 
+	            android:layout_gravity="center_vertical"
+	            android:layout_height="20dp"
+	            android:layout_width="1px"
+	            android:background="#989898"/>
+	         <LinearLayout 
+	            android:layout_height="wrap_content"
+				android:gravity="center"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:orientation="vertical">
+	            <TextView 
+	                android:id="@+id/goodbook_wantbuy_num"
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:textColor="#989898"
+	                android:text="23"/>
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_width="wrap_content"
+	                android:textColor="#989898"
+	                android:text="想买"/>
+	   
+	        </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+   
+	  <ImageView
+	    android:padding="2dp"
+	    android:layout_alignParentRight="true"
+        android:id="@+id/goodbook_item_img"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:src="@drawable/good_book_home_img" />
+	    
+	</LinearLayout>
+
+		<View 
+		    	android:layout_marginLeft="15dp"
+		    	android:layout_alignBottom="@id/ll"
+	            android:layout_height="1px"
+	            android:layout_width="match_parent"
+	            android:background="#989898"/>
+	
+</RelativeLayout>

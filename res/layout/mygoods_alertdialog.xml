@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+     <TextView
+    android:id="@+id/mygoods_dialog_top"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  
+    android:text="置顶"
+    android:textSize="13sp"
+    android:textColor="#666"
+    android:padding="10dp"
+         />
+     <View
+    android:layout_gravity="center"
+    android:layout_width="120dp"
+    android:layout_height="1dp"
+    android:background="#c0c0c0"  
+     />
+     
+     <TextView
+    android:padding="10dp"
+    android:id="@+id/mygoods_dialog_delete"
+    android:gravity="center" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  
+    android:text="删除"
+    android:textSize="13sp"
+    android:textColor="#666"
+         />
+    
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chxy.usedbook.activity.SearchPageActivity" >
+<!-- 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" > -->
+
+        <!--  -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#43c248" >
+
+            <!-- android:paddingRight="16dp" -->
+
+            <ImageView
+                android:id="@+id/search_back_iv"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/search_editText"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/search_icon_return" />
+
+            <EditText
+                android:id="@+id/search_editText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/search_back_iv"
+                android:background="@drawable/search_frame_shape_bg"
+                android:gravity="center"
+                android:hint="书名、关键词"               
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textColorHint="#AADDAA"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@+id/search_editText"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@+id/search_back_iv"
+                android:background="#ffffff" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                android:gravity="center"
+                android:src="@drawable/search_page_icon" />
+        </RelativeLayout>
+    <!-- </LinearLayout>
+ -->
+    <TextView
+        android:id="@+id/hot_search_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:text="热门搜索"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.chxy.usedbook.view.HotSearchFlowLayout
+            android:id="@+id/flowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.chxy.usedbook.view.HotSearchFlowLayout>
+
+        <LinearLayout
+            android:id="@+id/search_history_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- android:visibility="gone" -->
+
+            <TextView
+                android:id="@+id/search_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="24dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp"
+                android:text="搜索历史"
+                android:textColor="#999999"
+                android:textSize="16sp" />
+
+            <ListView
+                android:id="@+id/search_history_lv"
+                style="@style/search_history_listView_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#999999"
+                android:dividerHeight="0.5dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="8dp" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"  
+    android:id="@+id/booksmarket_select_layout"  
+    android:background="#44C149">
+
+    <ImageView
+        android:id="@+id/books_market_title_return_img"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:src="@drawable/icon_return" />
+    
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/books_market_title_return_img"
+        android:text="书籍市场"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+    
+
+ 	<ImageView
+        android:id="@+id/books_market_title_search_img"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:layout_toLeftOf="@+id/books_market_title_img"
+        android:src="@drawable/icon_books_market_title_search_img" />   
+
+    <ImageView
+        android:id="@+id/books_market_title_img"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" 
+        android:padding="8dp"       
+        android:src="@drawable/icon_books_market_title_img" />   
+    
+</RelativeLayout>

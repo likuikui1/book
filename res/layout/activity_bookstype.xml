@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="#43c248"
+    android:padding="3dp"
+        >
+        <ImageView
+       android:layout_centerVertical="true" 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:id="@+id/bookstype_back"
+       android:src="@drawable/icon_return"     
+            />
+        <TextView
+        android:layout_centerVertical="true"     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        android:text="书籍分类"
+        android:textColor="#f1f1f1"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/bookstype_back"   
+            />
+        
+    </RelativeLayout>
+    
+    
+    <ListView
+        android:dividerHeight="-2dp"
+        android:id="@+id/bookstype_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        />
+
+</LinearLayout>

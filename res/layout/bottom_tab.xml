@@ -1,0 +1,62 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost" 
+    >
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost" 
+    android:orientation="vertical"
+        >
+    <FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:id="@android:id/tabcontent"
+        />
+    
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+
+      <RadioGroup
+        android:id="@+id/rg_group" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#f1f1f1"
+        >
+        
+        <RadioButton
+        android:id="@+id/rb_home"
+        android:checked="true" 
+        android:text="首页" 
+        style="@style/Bottom_Tab_Style"
+        android:drawableTop="@drawable/tab_home_selector"
+            />
+        
+        <RadioButton
+        android:id="@+id/rb_wish"
+        android:text="心愿单" 
+        style="@style/Bottom_Tab_Style"
+        android:drawableTop="@drawable/tab_hei_selector"
+            />
+        
+        <RadioButton
+        android:id="@+id/rb_mine"
+        style="@style/Bottom_Tab_Style"
+        android:text="我的" 
+        android:drawableTop="@drawable/tab_setting_selector"
+            />
+    </RadioGroup>
+    
+    </LinearLayout>
+    
+</TabHost>

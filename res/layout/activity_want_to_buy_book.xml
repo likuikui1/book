@@ -1,0 +1,392 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wtobuy_head_linear"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#44C149"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/wtobuy_return_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/wtobuy_back" />
+
+        <TextView
+            android:id="@+id/wtobuy_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="@string/publishWishesTips"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wtobuy_center_linear"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#CCCCCC"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/wtobuy_upload_photos_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/wtobuy_upload_photos_btn_bg"
+            android:text="上传图片"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/wtobuy_take_photos_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/wtobuy_take_photos_btn_bg"
+            android:text="拍照"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wtobuy_detial_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wtbuy_bookname_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="书名"
+                android:textColor="#666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#f1f1f1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wtobuy_old_and_new_degree_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="新旧程度"
+                android:textColor="#666"
+                android:textSize="14sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="43dp"
+                android:layout_toRightOf="@+id/wtobuy_old_and_new_degree_txt"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/wtobuy_all_new_rbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/wtobuy_old_and_new_degree_rbtn_selector"
+                    android:checked="true"
+                    android:text="全新"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+
+                <RadioButton
+                    android:id="@+id/wtobuy_8_new_rbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:button="@drawable/wtobuy_old_and_new_degree_rbtn_selector"
+                    android:text="8成新"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+
+                <RadioButton
+                    android:id="@+id/wtobuy_5_new_rbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:button="@drawable/wtobuy_old_and_new_degree_rbtn_selector"
+                    android:text="5成新"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#f1f1f1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wtobuy_to_reward_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:gravity="center_vertical"
+                android:text="报答方式"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/wtobuy_price_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/wtobuy_to_reward_txt"
+                android:paddingLeft="16dp"
+                android:text="急求！我愿出价"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/wtobuy_price_edittxt"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/wtobuy_price_txt1"
+                android:paddingLeft="16dp"
+                android:inputType="number"
+                android:theme="@style/MyEditText" />
+
+            <TextView
+                android:id="@+id/wtobuy_price_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/wtobuy_price_edittxt"
+                android:text="元"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#f1f1f1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wtbuy_contact_information_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center_vertical"
+                android:text="联系方式"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/wtbuy_contact_information_txtline"
+                android:layout_width="1dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/wtbuy_contact_information_txt"
+                android:background="#999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/wtbuy_contact_information_txtline"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/wtobuy_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/wtobuy_to_reward_txt"
+                        android:paddingLeft="16dp"
+                        android:text="手机号:"
+                        android:textColor="#666"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/wtobuy_phone_number_edittext"
+                        android:layout_width="225dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:layout_toRightOf="@+id/wtobuy_phone_number"
+                        android:paddingLeft="16dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#999999" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/wtobuy_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/wtobuy_to_reward_txt"
+                        android:paddingLeft="16dp"
+                        android:text="QQ:"
+                        android:textColor="#666"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/wtobuy_qq_edittext"
+                        android:layout_width="225dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:layout_toRightOf="@+id/wtobuy_qq"
+                        android:paddingLeft="16dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#999999" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/wtobuy_wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/wtobuy_to_reward_txt"
+                        android:paddingLeft="16dp"
+                        android:text="微信:"
+                        android:textColor="#666"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/wtobuy_wechat_edittext"
+                        android:layout_width="225dp"
+                        android:layout_height="30dp"
+                        android:background="@null"
+                        android:layout_toRightOf="@+id/wtobuy_wechat"
+                        android:paddingLeft="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:background="#f1f1f1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wtbuy_leave_words_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:text="发布者说:"
+                android:textColor="#666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#e87126"
+            android:padding="5dp"
+            android:text="求购"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#44C149"
+    android:orientation="horizontal" >
+    <ImageView 
+        android:padding="8dp"
+        android:id="@+id/booksmarket_select_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_return"
+        />
+   <TextView
+       android:id="@+id/booksmarket_select_titlename"
+       android:layout_toRightOf="@id/booksmarket_select_return"
+       android:layout_centerInParent="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="书籍市场"
+       android:textColor="#ffffff"
+       android:textSize="20sp"
+       />
+   <ImageView
+       android:padding="5dp"
+       android:id="@+id/booksmarket_select_search"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toLeftOf="@+id/booksmarket_select_screen"
+       android:layout_centerInParent="true"
+       android:layout_marginRight="15dp"
+       android:src="@drawable/search_page_icon"
+        />
+   <ImageView
+       android:padding="5dp"
+       android:id="@+id/booksmarket_select_screen"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginRight="10dp"
+       android:layout_alignParentRight="true"
+       android:layout_centerInParent="true"
+       android:src="@drawable/bookmarket_icon_screen"
+        />
+</RelativeLayout>

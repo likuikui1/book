@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <ImageView 
+        android:id="@+id/listview_book_detail_comment_message_item_head_img"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/book_detail_img_head"/>
+    <LinearLayout 
+        android:paddingTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/listview_book_detail_comment_message_item_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="小红"/>
+        <TextView 
+            android:id="@+id/listview_book_detail_comment_message_item_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="11sp"
+            android:textColor="#979797"
+            android:text="今天12:20"/>
+        <TextView 
+            android:id="@+id/listview_book_detail_comment_message_item_chat"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="你好！书卖给我好吗"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/listview_sjxq_comment_message_reply"
+        android:padding="3dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#44C149"
+        android:text="回复"/>
+
+</LinearLayout>

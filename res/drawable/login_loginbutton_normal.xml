@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 登陆按钮按压前 -->
+    <corners android:radius="40dp" />
+
+    <solid android:color="#43c248" />
+
+    <stroke
+        android:width="1dp"
+        android:color="#43c248" />
+
+</shape>
